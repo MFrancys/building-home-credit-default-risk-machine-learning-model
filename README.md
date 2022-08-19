@@ -153,11 +153,11 @@ To increase the default identification rate and ensure a smooth experience for m
 
 - High risk: This rule seeks to identify more customers who cannot pay, assuming a higher rate of false positives. The false positive rate tolerance level for this rule equals 20%, and this rate corresponds to requests whose score is between 0.57 and 0.77. But as the number of mislabeled good customers identified by the model increases, customers who fall into this segment must manually go through a more extensive review before being denied.
 
-- Low risk: Applications with a score lower than 0.57 can be automatically approved.
+- Low risk: Applications with a score lower than 0.57 can be automatically pre-approved.
 
 <img src="image/false_positive_rate.png">
 
-<img src="image/business_rule.png">
+<img src="image/get_business_rules.png">
 
 Based on the set of tests, the number of clients that the model identifies as a potential risk of non-repayment is evaluated, that is, those whose score is greater than 0.57. 
 The following results are obtained: 
